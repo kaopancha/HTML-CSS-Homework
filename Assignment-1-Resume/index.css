@@ -15,7 +15,7 @@ body {
   .resume {
     display: flex;
     position: relative; /* ให้ .resume เป็นขอบเขตของ absolute ข้างใน */
-    max-width: 900px;
+    width: 900px;
     min-height: 1024px;
     height: 80vh;
     margin: 50px auto;
@@ -24,6 +24,7 @@ body {
   }
   
   .left {
+    min-width: 260px;
     width: 35%;
     height: 95%;
     background-color: var(--primary-color);
@@ -33,6 +34,7 @@ body {
   }
   
   .right {
+    min-width: 640px;
     width: 65%;
     padding: 30px;
     box-sizing: border-box;
