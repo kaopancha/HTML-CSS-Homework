@@ -1,0 +1,116 @@
+:root {
+    --primary-color: #9C2D41;
+    --secondary-color: #CB857C;
+    --text-dark: #030303;
+    --background-light: #FAF7F4;
+    --background-dark: #333;
+}
+body {
+    margin: 0;
+    font-family: 'Prompt', sans-serif;
+    background-color: #f5f5f5;
+    color: var(--text-dark);
+  }
+  
+  .resume {
+    display: flex;
+    position: relative; /* ให้ .resume เป็นขอบเขตของ absolute ข้างใน */
+    max-width: 900px;
+    min-height: 1024px;
+    height: 80vh;
+    margin: 50px auto;
+    background: var(--background-light);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .left {
+    width: 35%;
+    height: 95%;
+    background-color: var(--primary-color);
+    color: var(--background-light);
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  
+  .right {
+    width: 65%;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  
+  .profile-wrapper {
+    width: 200px;            /* กำหนดขนาดคงที่ */
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;        /* ตัดส่วนเกินให้พอดีกับวงกลม */
+    border: 5px solid var(--background-light);
+    margin-bottom: 20px;
+    background-color: var(--background-dark);
+  }
+  
+  .profile-pic {
+    width: 80%;
+    height: 100%;
+    object-fit: cover;       /* ครอบภาพให้เต็มกรอบแบบสวยงาม */
+    object-position: 30px 0px;
+  }
+  
+  .contact p {
+    margin: 5px 0;
+  }
+  
+  .section {
+    margin-top: 25px;
+  }
+  
+  .section h2 {
+    padding-left: 30px;
+    background-color: var(--background-dark);
+  }
+  
+  .right .section h2 {
+    color: var(--background-light);
+    background-color: var(--primary-color);
+  }
+  
+  .name {
+    font-size: 2em;
+    margin: 0;
+  }
+  
+  .role {
+    font-size: 0.5em;
+    color: var(--primary-color);
+  }
+  
+  .job-title {
+    margin-top: 0;
+    font-weight: normal;
+    color: #777;
+  }
+  
+  ul {
+    padding-left: 20px;
+  }
+  
+  ul li {
+    margin-bottom: 5px;
+  }
+
+  .linkme {
+    position: absolute;
+    bottom: 0px;
+    right: 30px;
+    border-radius: 4px;
+    text-decoration: none;
+    height: 5%;
+    color: var(--background-light);
+    background-color: var(--primary-color);
+    padding: 0px 20px 0px 20px;
+  }
+
+  .linkme img{
+    color: var(--background-light);
+    padding: 10px 10px 10px 10px;
+  }
+  
