@@ -1,0 +1,174 @@
+
+body {
+    margin: 0;
+    font-family: 'Prompt', sans-serif;
+    background-color: #f5f5f5;
+    color: var(--text-dark);
+  }
+
+/* header */
+.top-header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+  
+  .top-header .address {
+    display: flex;
+    align-items: start;
+    gap: 8px;
+    margin-left: 5%;
+  }
+  
+  .top-header .address i {
+    color: red;
+  }
+  
+  .top-header .social-icons {
+    margin-right: 5%;
+  }
+
+  .top-header .social-icons img {
+    width: 32px;
+    height: 32px;
+    margin-left: 5px;
+  }
+  .map {
+    height: 20px;
+  }
+  
+/* div menu */
+.topbar {
+    background-color: white;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+    padding: 10px 10px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 5%;
+  }
+  
+  .left-section {
+    display: flex;
+    align-items: center;
+    flex: 1;
+  }
+  
+  .right-section {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* ระยะห่างระหว่าง menu / contact / flag */
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  
+  
+  .logo-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 60px;
+    margin-right: 10px;
+  }
+  
+  .menu ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu li {
+    margin: 0 6px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Highlight แบบปุ่ม */
+  .menu ul li a.active,
+  .menu ul li a:hover {
+    background-color: #b10000; /* แดงโทนเข้ม */
+    color: white;
+  }  
+
+  .contact-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .phone-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+  }
+  
+  .phone-label {
+    color: #000;
+    font-size: 14px;
+    margin: 0;
+  }
+  
+  .phone-number {
+    color: #d32f2f;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  
+  .lang-toggle .flag {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .hamburger {
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #d32f2f;
+  }
+  
+  /* Responsive (Mobile / Tablet) */
+  @media screen and (max-width: 1279px) {
+    .menu,
+    .contact-section, .top-header {
+      display: none;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  
+    .container {
+      justify-content: space-between;
+    }
+  }
+  
