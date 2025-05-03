@@ -92,7 +92,7 @@ body {
   }
   
   .menu li {
-    margin: 0 6px;
+    margin: 0 4px;
   }
   
   .menu a {
@@ -105,7 +105,7 @@ body {
     text-decoration: none;
     color: #333;
     font-weight: 500;
-    padding: 6px 12px;
+    padding: 6px 10px;
     border-radius: 20px;
     transition: background-color 0.3s, color 0.3s;
   }
