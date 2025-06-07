@@ -13,3 +13,7 @@
 - รายละเอียด: Responsive ด้วย CSS เท่านั้น
 - เว็บไซต์ต้นฉบับให้ clone: [https://www.quadtech.co.th/th](https://www.quadtech.co.th/th)
 - Deploy: [ดูหน้าเว็บ](https://kaopancha.github.io/HTML-CSS-Homework/Assignment-3-Responsive)
+
+## Assignment JS 1: Calculator
+- รายละเอียด: เครื่องคิดเลข HTML + CSS + JS
+- Deploy: [ดูหน้าเว็บ](https://kaopancha.github.io/HTML-CSS-Homework/Assignment-JavaScript-1)
