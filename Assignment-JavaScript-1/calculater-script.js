@@ -24,6 +24,16 @@ function handleInput(value) {
   let err = 0;
   // ตัวเลข กับ .
   if (!isNaN(value) || (value === '.' && !currentInput.includes('.'))) {
+    if (isEqual) {
+      // start a new calculation after finishing the previous one
+      firstOperand = '';
+      operator = '';
+      secondOperand = '';
+      historyText = '';
+      currentInput = '';
+      isEqual = false;
+    }
+
     if (currentInput.replace('.', '').length < 14)
       currentInput += value;
     isChangeOperator = false;
